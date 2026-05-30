@@ -61,6 +61,7 @@ Initial project setup is now in place:
 - Replace pending project/demo placeholders when real links are provided
 - Continue final responsive review and content proofreading across the homepage
 - Consider connecting contact storage fully to MongoDB-backed review workflows in later phases
+- Prepare backend/frontend production deployment configuration using the documented local `5050` API fallback and hosted environment variables
 
 ## Risks / Open Questions
 
@@ -86,3 +87,5 @@ Validation performed:
 - validated `POST /api/contact` success and validation-error responses using an isolated Express listener on port `5051`
 - verified the frontend production build after contact form integration
 - removed unused Vite starter assets and strengthened shared UI polish for navbar, footer, and global focus/input states
+- fixed local development API defaults to use port `5050` instead of the conflicting macOS `5000` service and cleaned both frontend/backend env examples
+- validated local CORS allow-list behavior for `http://localhost:5174` using an isolated Express listener on port `5054`

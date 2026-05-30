@@ -8,9 +8,20 @@ import contactRoutes from './routes/contactRoutes.js';
 
 const app = express();
 
+const allowedOrigins = [env.clientUrl, 'http://localhost:5173', 'http://localhost:5174'].filter(
+  Boolean,
+);
+
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+        return;
+      }
+
+      callback(new Error(`CORS blocked for origin: ${origin}`));
+    },
     credentials: true,
   }),
 );
