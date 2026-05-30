@@ -41,6 +41,36 @@ textarea {
   font: inherit;
 }
 
+input,
+textarea {
+  caret-color: #38bdf8;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+}
+
+button,
+a,
+input,
+textarea {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    opacity 160ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.9);
+  outline-offset: 2px;
+}
+
 #root {
   min-height: 100vh;
 }

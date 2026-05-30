@@ -15,6 +15,8 @@ The goal of this documentation is to keep the project organized, professional, a
 ### Architecture
 - [`architecture/system-overview.md`](architecture/system-overview.md)
   - High-level architecture, modules, and data flow.
+- [`architecture/file-and-feature-map.md`](architecture/file-and-feature-map.md)
+  - Detailed map of which functionality lives in which folder/file and where to edit it.
 
 ### Work Logs
 - [`work-log/2026-05-30-project-initialization.md`](work-log/2026-05-30-project-initialization.md)

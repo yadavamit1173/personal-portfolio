@@ -39,10 +39,13 @@ Initial project setup is now in place:
 - Tailwind CSS v4 configured through the Vite plugin
 - Express backend scaffolded in `server/`
 - Health endpoint added at `GET /api/health`
+- Read-only content API routes added under `GET /api/content/*`
+- Frontend homepage now attempts to load live portfolio content from the backend API with graceful fallback to local seeded data
+- Contact submission flow now includes backend validation, a write-capable API endpoint, and frontend form UX with success and error handling
 - Shared UI primitives added for cards, headings, navbar, footer, and section wrappers
 - First dark-themed homepage built using CV-seeded portfolio data
 - Coding achievements section and richer project storytelling added to the public UI
-- Backend environment template and runtime config added
+- Backend environment template, runtime config, MongoDB connection utility, and initial Mongoose models added
 
 ## Key Decisions
 
@@ -54,11 +57,10 @@ Initial project setup is now in place:
 
 ## Remaining Immediate Work
 
-- Refine responsive spacing and section polish across the homepage
+- Add optional email delivery or admin-review workflows for contact submissions
 - Replace pending project/demo placeholders when real links are provided
-- Add MongoDB connection utility on the backend
-- Define initial backend data models
-- Begin public content API design
+- Continue final responsive review and content proofreading across the homepage
+- Consider connecting contact storage fully to MongoDB-backed review workflows in later phases
 
 ## Risks / Open Questions
 
@@ -78,3 +80,9 @@ Validation performed:
 - confirmed documentation files were created in the workspace
 - installed frontend and backend dependencies successfully
 - verified the frontend production build with `npm run build`
+- re-validated the enhanced homepage build after UI and content improvements
+- verified backend read-only API responses for health, profile, and projects using an isolated Express listener on port `5050`
+- verified the frontend production build after API integration and fallback-state handling
+- validated `POST /api/contact` success and validation-error responses using an isolated Express listener on port `5051`
+- verified the frontend production build after contact form integration
+- removed unused Vite starter assets and strengthened shared UI polish for navbar, footer, and global focus/input states

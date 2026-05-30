@@ -6,6 +6,7 @@ export const portfolio = {
   email: 'amityadav422v@gmail.com',
   phone: '8303611700',
   location: 'India',
+  availability: 'Available for impactful full-stack engineering opportunities',
   socialLinks: [
     {
       label: 'GitHub',
@@ -25,6 +26,16 @@ export const portfolio = {
     'Built payment processing dashboards and backend services',
     'Solved 800+ DSA problems across competitive coding platforms',
   ],
+  heroMetrics: [
+    { label: 'Experience', value: '2+ Years' },
+    { label: 'Systems Focus', value: 'Payments & APIs' },
+    { label: 'Problem Solving', value: '800+ DSA Problems' },
+  ],
+  strengths: [
+    'Scalable React dashboards and reusable component systems',
+    'Node.js and Express microservices for secure business workflows',
+    'AWS-backed delivery with practical cloud and backend exposure',
+  ],
   skills: {
     frontend: ['React.js', 'Redux', 'Tailwind CSS', 'SCSS', 'JavaScript', 'HTML'],
     backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'OAuth2'],
@@ -41,6 +52,7 @@ export const portfolio = {
         'Built and optimized RESTful microservices using Node.js and Express.js and integrated them with responsive frontend applications.',
         'Strengthened application security with JWT, OAuth2, secure cookies, validation, rate limiting, and resilient error handling.',
       ],
+      tags: ['React Dashboards', 'Payments', 'Node.js APIs', 'AWS'],
     },
     {
       company: 'MBS Studios',
@@ -51,6 +63,7 @@ export const portfolio = {
         'Developed frontend applications using ReactJS, Redux, JavaScript, and SCSS with improved responsiveness and maintainability.',
         'Optimized performance and collaborated closely with UI/UX teams to deliver user-friendly web applications.',
       ],
+      tags: ['React', 'Redux', 'Express.js', 'Performance'],
     },
   ],
   projects: [
@@ -110,19 +123,41 @@ export const portfolio = {
       {
         label: 'LeetCode',
         href: 'https://leetcode.com/u/amit_808/',
-        description: 'Consistent problem-solving practice across core data structures and algorithms topics.',
+        description:
+          'Consistent problem-solving practice across core data structures and algorithms topics.',
       },
       {
         label: 'GitHub',
         href: 'https://github.com/yadavamit1173',
-        description: 'Code repositories reflecting hands-on MERN, backend, and product-oriented engineering work.',
-      },
-      {
-        label: 'Competitive Programming',
-        href: '',
-        description: 'Solved problems across platforms like Codeforces and CodeChef as part of continuous problem-solving growth.',
+        description:
+          'Code repositories reflecting hands-on MERN, backend, and product-oriented engineering work.',
       },
     ],
+    leetCodeActivity: {
+      label: 'Daily Problem Solving Activity',
+      currentStreak: '84 days',
+      totalActiveDays: '278 days',
+      problemsSolved: '800+',
+      breakdown: {
+        easy: '265',
+        medium: '428',
+        hard: '107',
+      },
+      weeks: [
+        [1, 2, 0, 3, 1, 2, 4],
+        [0, 1, 2, 1, 3, 0, 2],
+        [2, 3, 1, 0, 4, 2, 1],
+        [1, 4, 2, 3, 1, 2, 0],
+        [3, 2, 4, 1, 2, 3, 1],
+        [2, 1, 3, 4, 2, 1, 3],
+        [0, 2, 1, 3, 4, 2, 1],
+        [1, 3, 2, 4, 1, 2, 3],
+        [2, 4, 1, 2, 3, 1, 4],
+        [3, 1, 2, 4, 2, 3, 1],
+        [1, 2, 3, 1, 4, 2, 3],
+        [2, 3, 1, 4, 2, 1, 3],
+      ],
+    },
   },
   education: {
     degree: 'B.Tech in Electrical Engineering',

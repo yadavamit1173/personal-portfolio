@@ -77,8 +77,8 @@ The project should be implemented in phases so that each stage leaves the reposi
 - [x] Create `server/` structure
 - [x] Add Express app setup
 - [x] Add environment config
-- [ ] Add MongoDB connection utility
-- [ ] Define initial data models
+- [x] Add MongoDB connection utility
+- [x] Define initial data models
 - [x] Add health and basic content routes
 - [ ] Add validation strategy
 
@@ -123,4 +123,4 @@ The project should be implemented in phases so that each stage leaves the reposi
 
 ## Current Priority
 
-Refine the public portfolio experience with responsive polish, real project links/assets when available, and stronger visual differentiation between sections. After that, add the MongoDB connection utility on the backend so the project is ready for API-driven content in the next phase.
+With the contact submission flow in place, the next priority is to polish the contact UX, add optional persistence enhancements such as email delivery or admin review workflows, and continue replacing seeded placeholder project assets and links as real project references become available.
